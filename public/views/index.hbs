@@ -42,57 +42,43 @@
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Article 1</div>
-        <img src="./img/advocacy.png" alt="House" style="width:100%">
+        <a href="https://www.nytimes.com/2022/03/22/climate/youth-climate-protests.html"> <div class="w3-display-topleft w3-black w3-padding">Follow the global youth protests this week</div></a>
+        <br>
+        <p>Somini Sengupta, <i>New York Times</i></p>
+        <p>March 03, 2022</p>
+        <img src="https://static01.nyt.com/images/2022/03/21/climate/21cli-newsletter-protests/21cli-newsletter-protests-facebookJumbo.jpg" alt="House" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Article 2</div>
-        <img src="./img/advocacy.png" alt="House" style="width:100%">
+        <a href="https://www.bbc.co.uk/news/world-us-canada-61072741"> <div class="w3-display-topleft w3-black w3-padding">New York officers who shoved protester to be reinstated</div></a>
+        <br>
+        <br>
+        <p>BBC News, <i>BBC News</i></p>
+        <p>April 11, 2022</p>
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/B93E/production/_124122474_mediaitem112735194.jpg" alt="House" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Article 3</div>
-        <img src="./img/advocacy.png" alt="House" style="width:100%">
+        <a href="https://www.nytimes.com/2022/04/16/sports/baseball/cleveland-guardians.html"> <div class="w3-display-topleft w3-black w3-padding">Cleveland Guardians Nickname Is Difficult for Some Fans</div></a>
+        <br>
+        <br>
+        <p>David Waldstein, <i>New York Times</i></p>
+        <p>April 16, 2022</p>
+        <img src="https://static01.nyt.com/images/2022/04/16/multimedia/16mlb-guardians-top/16mlb-guardians-top-facebookJumbo.jpg" alt="House" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Article 4</div>
-        <img src="./img/advocacy.png" alt="House" style="width:100%">
-      </div>
+        <a href="https://www.bbc.co.uk/news/world-us-canada-61102065"> <div class="w3-display-topleft w3-black w3-padding">Video shows fatal US police shooting of black man</div></a>
+        <br>
+        <br>
+        <p>BBC News, <i>BBC News</i></p>
+        <p>April 14, 2022</p>
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/11842/production/_124164717_mediaitem124164709.jpg" alt="House" style="width:100%">
     </div>
   </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Article 5</div>
-        <img src="./img/advocacy.png" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Article 6</div>
-        <img src="./img/advocacy.png" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Article 7</div>
-        <img src="./img/advocacy.png" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Article 8</div>
-        <img src="./img/advocacy.png" alt="House" style="width:99%">
-      </div>
-    </div>
-  </div>
-
 
   <!-- Change Section -->
     <div class="w3-container w3-padding-32" id="change">
@@ -103,55 +89,20 @@
 
   <p id="demo"></p>
   <script>
-  var x = document.getElementById("demo");
 
   function getLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
-      x.innerHTML = "Geolocation is not supported by this browser.";
     }
   }
 
   function showPosition(position) {
 
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
 
     window.open("/reps?lat=" + position.coords.latitude + "&long=" + position.coords.longitude)
   }
   </script>
-
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="./img/congress_seal.png" alt="Representative 1" style="width:100%">
-      <h3>Representative 1</h3>
-      <p class="w3-opacity">Senator</p>
-      <p>Description on Representative 1.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="./img/congress_seal.png" alt="Representative 2" style="width:100%">
-      <h3>Representative 2</h3>
-      <p class="w3-opacity">Senator</p>
-      <p>Description on Representative 2.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="./img/congress_seal.png" alt="Representative 3" style="width:100%">
-      <h3>Representative 3</h3>
-      <p class="w3-opacity">House of Representatives</p>
-      <p>Description on Representative 3.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="./img/congress_seal.png" alt="Representative 4" style="width:100%">
-      <h3>Representative 4</h3>
-      <p class="w3-opacity">Governor</p>
-      <p>Description on Representative 4.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-  </div>
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
@@ -175,7 +126,7 @@
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
     <p>Lets get in touch.</p>
-    <form action="/action_page.php" target="_blank">
+    <form action="/contacted" target="_blank">
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
@@ -197,7 +148,7 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="News2Change" target="_blank" class="w3-hover-text-green">News2Change</a></p>
+  <p>Powered by <a href="./" title="News2Change" target="_blank" class="w3-hover-text-green">News2Change</a></p>
 </footer>
 
 </body>

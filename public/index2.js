@@ -49,10 +49,6 @@ app.get('/', function(req, res){
 
 });
 
-app.get('/contacted', function(req, res){
-	res.render('contacted');
-})
-
 app.get('/reps', function(req, res){
 
 
@@ -166,23 +162,19 @@ app.get('/reps', function(req, res){
 										senator1: senator1.name,
 										senator1link: url,
 										party1: senator1.party,
-										contact1: senator1.urls[0],
 
 										senator2: senator2.name,
 										senator2link: senator2.photoUrl,
 										party2: senator2.party,
-										contact2: senator2.urls[0],
 
 
 										local_rep: local_rep.name,
 										local_replink: local_rep.photoUrl,
 										party3: local_rep.party,
-										contact3: local_rep.urls[0],
 
 										governor: governor.name,
 										governorlink: governor.photoUrl,
 										party4: governor.party,
-										contact4: governor.urls[0]
 
 									};
 
