@@ -109,56 +109,6 @@ app.get('/reps', function(req, res){
 
 
 								const url = urlSen
-								/*
-
-
-
-								const download = (url, path, callback) => {
-								  request.head(url, (err, res, body) => {
-								    request(url)
-								      .pipe(fs.createWriteStream(path))
-								      .on('close', callback)
-								  })
-								}
-
-								const path = './static/img/senator1.png'
-								if(url!=undefined){
-									console.log(url)
-								download(url, path, () => {
-								  console.log('✅ Done!')
-								})
-							}
-
-								
-
-								const url2 = senator2.photoUrl
-								const path2 = './static/img/senator2.png'
-								if(url2!=undefined){
-
-								download(url2, path2, () => {
-								  console.log('✅ Done!')
-								})}
-
-
-
-								const url3 = local_rep.photoUrl
-								const path3 = './static/img/local_rep.png'
-								if(url3!=undefined){
-
-								download(url3, path3, () => {
-								  console.log('✅ Done!')
-								})}
-
-
-								const url4 = governor.photoUrl
-								const path4 = './static/img/governor.png'
-								if(url4!=undefined){
-
-								download(url4, path4, () => {
-								  console.log('✅ Done!')
-								})}
-								*/
-								
 								
 
 								  	out = {
@@ -187,18 +137,6 @@ app.get('/reps', function(req, res){
 									};
 
 								  res.render("reps", out)
-
-							  /*
-
-							  var urlDownload = senator1.photoUrl
-							  download.image({
-							       urlDownload,
-							       dest: "senator1.img" 
-    							}) */
-
-
-
-
 
 						});
 
